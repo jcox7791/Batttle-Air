@@ -1,0 +1,62 @@
+.b-bg{
+    background-color: black;
+}
+/* Header Container */
+.conH {
+    color: whitesmoke;
+    text-align: center;
+}
+.title{
+    font-size: 75px;
+    font-family: segoe script;
+    text-shadow: 5px 5px turquoise;
+}
+.conH1 {
+ display: grid;
+ grid-template-columns: repeat(3, auto);
+}
+.conH2{
+    display: inline-flex;
+}
+
+/* Modal */
+#pause{    
+    color: black;
+}
+.volumeMB{
+    display: inline-flex;
+}
+/* Main Container */
+.conM{
+    margin-top: 50px;
+}
+
+.conM1 {
+    background-color: rgb(121, 173, 241);  
+    height: 650px;
+    
+}
+/* Identifying its location in the div its nested in for javascript function. */
+#plane{
+    position: relative;
+}
+.plane{
+    display: inline-flex;
+}
+.bullet{
+    position: relative;    
+    color: yellow;
+    top: 23px;
+    left: -10px;
+    font-size: 30px;
+}
+.conM2{
+    background-color:green;  
+    height: 25px;    
+}
+/* Footer Container */
+.createdBy{
+    font-size: larger;
+    color: whitesmoke;
+    text-align: center;   
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Battle Air</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./game.css">
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+    <!-- Javascript -->
+    <script defer src="./game.js"></script>
+</head>
+
+<body class="b-bg">
+    <header class="conH">
+        <p class="title">Battle Air</p>
+        <div class="conH1">
+            <div>
+                <!-- Modal-trigger "Pause" -->
+                <button type="button" id="pauseGame" class="btn btn-warning" data-bs-toggle="modal"
+                    data-bs-target="#pause">
+                    <img style="height: 25px; width: 25px;" src="./assets/images/pause.png" alt="Pause Icon">Pause Game
+                </button>
+                <!-- Modal for "Pause" -->
+                <div class="modal fade" id="pause" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Pause Menu:</h5>
+                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal"
+                                    aria-label="Close">Resume</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="volume">
+                                    <img style="width: 50px; height: 50px;" src="./assets/images/audioVolume.png"
+                                        alt="Audio Volume Icon">
+                                    <h3>Volume:</h3>
+                                </div>
+                                <!--Need to write the javascript for the progress bar -->
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 75%"></div>
+                                </div>
+                                <br>
+                                <div class="volume">
+                                    <img style="width: 50px; height: 50px;" src="./assets/images/audio.png"
+                                        alt="Audio Icon">
+                                    <h3>Sound Fx:</h3>
+                                </div>
+                                <!--Need to write the javascript for the progress bar -->
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 75%"></div>
+                                </div>
+                                <br>
+                                <a href="./index.html">
+                                    <button id="endGame" class="btn btn-outline-danger" type="button">End Game</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <h2>Player:</h2>
+                <p id="userName" style="margin-left: 25px; font-size: 25px;"></p>
+            </div>
+            <div class="">
+                <h2>Score:</h2>
+                <p id="score" style="margin-left: 25px; font-size: 25px;"></p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="con" class="conM1">
+            <div id="plane" class="plane">
+                <img src="./assets/images/plane.png" alt="plane">
+                <div id="shot" class="bullet"></div>
+                <div id="targets">
+                    <div class="t1"></div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="conM2"></div>
+    </main>
+    <footer>
+        <p class="createdBy">Created By: Twisted Cyber Design&copy;2022 </p>
+    </footer>
+</body>
+<!-- DO NOT TOUCH from here down!!! -->
+<!-- JQuery -->
+<script src="./jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap  -->
+<script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+
+</html>

@@ -1,0 +1,119 @@
+.b-bg {
+  background-color: black;
+}
+
+.conH {
+  color: whitesmoke;
+  text-align: center;
+}
+
+h1 {
+  font-size: 75px;
+  font-family: segoe script;
+  text-shadow: 5px 5px turquoise;
+}
+
+.conH1 {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.conM {
+  margin-top: 50px;
+}
+
+.conM1 {
+  background-color: rgb(121, 173, 241);
+  height: 550px;
+}
+
+.plane {
+  margin-top: 150px;
+  margin-left: 50px;
+}
+
+/* target container */
+.conM1-a {
+  position: relative;
+}
+
+/* targets  */
+.t1 {
+  position: absolute;
+  top: 28px;
+  left: 700px;
+}
+
+.t2 {
+  position: absolute;
+  top: 150px;
+  left: 880px;
+}
+
+.t3 {
+  position: absolute;
+  top: 80px;
+  left: 600px;
+}
+
+.t4 {
+  position: absolute;
+  top: 175px;
+  left: 550px;
+}
+
+.t5 {
+  position: absolute;
+  top: 200px;
+  left: 760px;
+}
+
+.t6 {
+  position: absolute;
+  top: 140px;
+  left: 670px;
+}
+
+.t7 {
+  position: absolute;
+  top: 275px;
+  left: 680px;
+}
+
+.conM1-b {
+  text-align: center;
+ 
+}
+/* .menu{
+    margin-bottom: 1em; 
+} */
+
+.volumeMB {
+  display: inline-flex;
+}
+
+.conM2 {
+  background-color: green;
+  height: 25px;
+}
+
+.conF {
+  color: whitesmoke;
+  text-align: center;
+  /* display: grid;
+  grid-template-columns: repeat(3, auto); */
+}
+
+.pF {
+  font-size: 20px;
+  font-family: segoe script;
+  text-shadow: 1.5px 1px turquoise;
+}
+
+.conF2 {
+  text-align: center;
+}
+
+.conF3 {
+  text-align: right;
+}

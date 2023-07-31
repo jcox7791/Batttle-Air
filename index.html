@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Air</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./index.css">
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+    <!-- javascript -->
+    <script defer src="./index.js"></script>
+</head>
+
+<body class="b-bg">
+    <header class="conH">
+        <h1>Air Raid</h1>
+        <div class="conH1">
+            <div>
+                <h2>Player:</h2>
+                <p id="userName"></p>
+            </div>
+            <div>
+                <h2>Top Score:</h2>
+                <p id="score"></p>
+            </div>
+        </div>
+    </header>
+
+    <main class="conM">
+        <div class="conM1">
+            <div class="conM1-a">
+                <img class="plane" src="./assets/images/plane.png" alt="plane">
+                <img class="t1" src="./assets/images/target.png" alt="targets">
+                <img class="t2" src="./assets/images/target.png" alt="targets">
+                <img class="t3" src="./assets/images/target.png" alt="targets">
+                <img class="t4" src="./assets/images/target.png" alt="targets">
+                <img class="t5" src="./assets/images/target.png" alt="targets">
+                <img class="t6" src="./assets/images/target.png" alt="targets">
+                <img class="t7" src="./assets/images/target.png" alt="targets">
+            </div>
+            <div class="conM1-b">
+
+                <div class="menu">
+                    <!-- Modal-trigger "Menu" -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#control">
+                        Menu
+                    </button>
+                </div>
+                <!-- Modal for "Menu" -->
+                <div class="modal fade" id="control" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Main Menu</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="volumeMB">
+                                    <img style="width: 50px; height: 50px;" src="./assets/images/audioVolume.png"
+                                        alt="Audio Volume Icon">
+                                    <h3>Volume:</h3>
+                                </div>
+                                <!--Need to write the javascript for the progress bar -->
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 75%"></div>
+                                </div>
+                                <br>
+                                <div class="volumeMB">
+                                    <img style="width: 50px; height: 50px;" src="./assets/images/audio.png"
+                                        alt="Audio Icon">
+                                    <h3>Sound Fx:</h3>
+                                </div>
+                                <!--Need to write the javascript for the progress bar -->
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <!-- Modal-trigger "Controls" -->
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#control">
+                        Controls
+                    </button>
+                </div>
+                <!-- Modal for "Controls" -->
+                <div class="modal fade" id="control" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Control Commands</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h5>Down Arrow Key = Down</h5>
+                                <h5>Up Arrow Key = Up</h5>
+                                <h5>F Key = Fire</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!-- Modal-trigger "PLAY GAME" -->
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#gameSetUP">
+                    Play Game
+                </button>
+                <!-- Modal for "PLAY GAME". -->
+                <div class="modal fade" id="gameSetUP" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ModalL">Air Raid</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="submit">
+                                    <label for="user_name">User Name:</label>
+                                    <!-- Place holder for javascript message. -->
+                                    <p id="message" style="color: red;"></p>
+                                    <input id="playerName" class="form-control" type="text" placeholder="james007.5"
+                                        name="user_name" required>
+                                    <button id="playGame" type="button" class="btn btn-primary">Play</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- The grass CSS placeholder -->
+        <div class="conM2"></div>
+
+    </main>
+
+    <Footer class="conF">
+        <!-- <div class="conF1">
+            <p class="pF">Follow Us &#64;:</p>
+            <a href="/">InDeed</a>
+            <a href="/">Twitter</a>
+            <a href="/">FaceBook</a>
+            <a href="/">Instagram</a>
+        </div> -->
+        <div class="conF2">
+            <p class="pF">&copy;Twisted Cyber Design</p>
+            <a href="/">Terms of Service</a>
+        </div>
+        <!-- <div class="conF3">
+            <p class="pF">Contact Info:</p>          
+            <p>Phone:<a href="tel:/">(555)555-5555</a></p>
+            <p>Email:<a href="mailto:/">jcox@gmail.com</a></p>
+        </div> -->
+    </Footer>
+</body>
+<!--DO NOT TOUCH or MOVE from here down!!!  -->
+<!-- JQuery -->
+<script src="./jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap  -->
+<script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+
+</html>
